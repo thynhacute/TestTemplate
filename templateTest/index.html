@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap-social.css" />
+    <link rel="stylesheet" href="./PostTemplate css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-icon-top navbar-expand-lg">
+      <div>
+        <a href="#"><img src="/5Lost.png" style="width: 30%" alt /></a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+
+        <div class="navigation">
+          <ul>
+            <li class="list active">
+              <a href="#">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="text">Trang chủ</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                <span class="text">Tìm kiếm</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                <span class="text">Đăng nhập</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#">
+                <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                <span class="text">Đăng tin</span>
+              </a>
+            </li>
+            <div class="indicator"></div>
+          </ul>
+        </div>
+        <script>
+            const list = document.querySelectorAll('.list');
+            function activeLink(){
+                list.forEach((item) =>
+                item.classList.remove('active'));
+                this.classList.add('active');
+            }
+            list.forEach((item) =>
+            item.addEventListener('click',activeLink));
+        </script>
+        <!-- <ul class="navbar-nav mr-auto" style="margin-left: auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <i class="fa fa-home"></i>
+              Trang chủ
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-search"> </i>
+              Tìm kiếm
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-solid fa-user"></i>
+              Đăng nhập
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-edit"></i>
+              Đăng tin
+            </a>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+    <div id="layoutSidenav_content">
+      <main>
+        <div class="container-fluid px-4">
+          <div class="title">
+            <h1>Đăng tin</h1>
+            <a>Bạn muốn đăng tin gì ?</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="button-card">
+      <a href="#">
+        <div class="card-1">
+          <div class="imgBox">
+            <img src="./PostTemplate css/image/giong_meo_ragdoll2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Đồ thất lạc</h2>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <div class="card-2">
+          <div class="imgBox">
+            <img src="./PostTemplate css/image/giong-meo-Munchkin-Midget.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="details">
+              <h2>Đồ nhặt được</h2>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<!------ Include the above in your HEAD tag ---------->
